@@ -15,10 +15,10 @@ $("#update_user").submit(function(event){
         data[n['name']] = n['value']
     })
 console.log(data)
-// https://safyanterminal.herokuapp.com
+//https://web-terminal-lab.herokuapp.com/
 
 
-        axios.put(`https://safyanterminal.herokuapp.com/api/${data.id}`,{
+        axios.put(`https://web-terminal-lab.herokuapp.com/api/${data.id}`,{
             "rating":data.rating
         }).then(e=>e).catch(e=>e)
 
@@ -31,7 +31,7 @@ console.log(data)
     $ondelete.click(function(){
         var id = $(this).attr("data-id")
         console.log(id)
-        axios.get(`https://safyanterminal.herokuapp.com/api/cart/${id}`).then(e=>e).catch(e=>e)
+        axios.get(`https://web-terminal-lab.herokuapp.com/api/cart/${id}`).then(e=>e).catch(e=>e)
 
 
         // if(confirm("Do you really want to add to cart")){

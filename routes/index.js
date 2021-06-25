@@ -8,7 +8,7 @@ router.get('/', forwardAuthenticated, (req, res) => res.render('welcome'));
 
 // Dashboard
 router.get('/dashboard', ensureAuthenticated, (req, res) =>
- axios.get(`https://safyanterminal.herokuapp.com/api`)
+ axios.get(`https://web-terminal-lab.herokuapp.com/api`)
         .then(function(response){
             res.render('dashboard', { users : response.data.Faculties,user: req.user });
         })
