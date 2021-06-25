@@ -1,0 +1,42 @@
+<% for(var i=0; i < users.length; i++) { %>
+  <tr>
+ 
+    <td>
+      <%= users[i].name %>
+    </td>
+    <td>
+      <%= users[i].description %>
+    </td>
+    <td>
+      <%= users[i].price %>
+    </td>
+    <td>
+      <% for(var j=0; j < users[i].rating; j++) { %>
+        <span class="fa fa-star checked" style="color:orange;"></span>
+      <% } 
+      
+      %>
+    </td>
+    <!-- <% if(users[i].address){ %> -->
+      <td>
+        <!-- <%= users[i].address.country %> -->
+      </td>
+      <td>
+        <!-- <%= users[i].address.city %> -->
+      </td>
+      <td>
+        <!-- <%= users[i].address.street_address %> -->
+      </td>
+    <!-- <% } %> -->
+    <td>
+      <a href="/update-user?id=<%= users[i]._id%>" class="btn border-shadow update">
+        <span class="text-gradient">Edit</span>
+      </a>
+  
+      <a class="btn border-shadow delete" data-id=<%=users[i]._id%> >
+        <span class="text-gradient"> add to cart </span>
+      </a>
+     
+    </td>
+  </tr>
+<% } %>

@@ -1,0 +1,24 @@
+<!-- form handling -->
+ <form action="/api" method="POST" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <input type="hidden" name="id" value="">
+            <input type="text" class="form-control" name="name" value="" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="description" value="" placeholder="Description">
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control" name="price" value="" placeholder="Price">
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control" name="rating" value="" placeholder="Rating" max="5">
+        </div>
+
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>

@@ -1,0 +1,37 @@
+<h1 class="mt-4">Lab terminal Estore</h1>
+<!-- include header -->
+<%- include('include/_header') %>
+  <!-- /include header -->
+
+
+  <!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+     
+
+      <!-- form handling -->
+      <form action="/" method="POST">
+        <table class="table">
+          <thead class="thead-light">
+            <tr>
+              <th>Name</th>
+              <th>Desciption</th>
+              <th>Price</th>
+              <th>Rating</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% console.log(users) %>
+              <%- include('include/_show') %>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </main>
+  <!-- /Main Site -->
+
+
+  <!-- include footer -->
+  <%- include('include/_footer') %>
+    <!-- /include footer -->

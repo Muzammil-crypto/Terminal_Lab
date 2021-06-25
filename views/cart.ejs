@@ -1,0 +1,29 @@
+<%- include('include/_header') %>
+
+<div class="container m-4">
+  
+  <h4>
+    cart 
+  </h4>
+<% for(var i=0; i < users.length; i++) { %>
+
+  <div>
+    <span>
+      <%= users[i].name %>
+    </span> 
+    <span>
+      <%= users[i].price %>
+    </span>
+  </div>
+<% } %>
+
+  <div>
+    <span>Price</span>
+    <span><%= price %></span>
+  </div>
+</div>
+  <a href="/" class="btn border-shadow">
+    <span class="text-gradient"> Order Now </span>
+  </a>
+
+<%- include('include/_footer') %>
