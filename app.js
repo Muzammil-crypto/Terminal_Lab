@@ -23,7 +23,8 @@ const db = require('./config/keys').mongoURI;
 // mongodb://localhost:27017/natours
 mongoose
   .connect(
-    'mongodb://localhost:27017/muzamil',
+    'mongodb+srv://Safyan:qwertyasdf@cluster0-f9smh.mongodb.net/muzamil?retryWrites=true&w=majority'
+    ,
     { useNewUrlParser: true ,useUnifiedTopology: true}
   )
   .then(() => console.log('MongoDB Connected'))
